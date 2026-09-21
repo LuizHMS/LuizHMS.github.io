@@ -35,7 +35,11 @@ function addRemedio() {
 			tipoReceita = "Receita Especial";
 		}
 	}
-	id = conteudo.listaRemedios.at(-1).id + 1;
+	if (conteudo.listaRemedios.length) {
+		id = conteudo.listaRemedios.at(-1).id + 1;
+	}else{
+		id = 1;
+	}
 	let remedio = new remedioEstoque(id, nome, comprimidos, tipoReceita);
 	conteudo.listaRemedios.push(remedio);
 	save(conteudo);
