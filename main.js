@@ -12,7 +12,6 @@ function initApplication() {
 		save(conteudo)
 	}, 5*60*1000);
 	montaTabela();
-
 }
 
 class remedioEstoque{
