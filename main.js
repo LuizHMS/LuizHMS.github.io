@@ -123,11 +123,12 @@ function montaTabela(){
 
 	header += "</div>";
 
-
-	conteudo.listaRemedios.forEach(function(a,i){
-		//let current = new remedioEstoque(a.id, a.nome, a.comprimidos, a.tipoReceita, a.ultimoComprimidoTomado);
-		rows += retornaLinhaRemedio(a.id);
-	});
+	if (conteudo.listaRemedios.length) {
+		conteudo.listaRemedios.forEach(function(a,i){
+			//let current = new remedioEstoque(a.id, a.nome, a.comprimidos, a.tipoReceita, a.ultimoComprimidoTomado);
+			rows += retornaLinhaRemedio(a.id);
+		});
+	}
 	mainDiv.innerHTML = header + rows;
 
 }
