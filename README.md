@@ -1,1 +1,1 @@
-app para controle de remédios
+App para controle de remédios
