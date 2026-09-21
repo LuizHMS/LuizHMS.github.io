@@ -140,7 +140,6 @@ function retornaLinhaRemedio(idRemedio) {
 	ret += "<div class='ultimoComprimidoTomado column' >" + remedio.ultimoComprimidoTomado + "</div>";
 	ret += "<div class='tomarRemedio column' >" + "<button onclick='remedioTomado(" + remedio.id + ");' >tomar remédio</button>" + "</div>";
 	ret += "<div class='remedioComprado column' >" + "<button onclick='reporRemedio(" + remedio.id + ");'>repor remédio</button>" + "</div>";
-
 	ret += "</div>";
 
 	return ret;
